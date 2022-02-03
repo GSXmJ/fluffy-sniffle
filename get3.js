@@ -36,7 +36,7 @@ async function fetchJson (targetAddress, collection) {
   } catch (error) {
     // Timeouts if the request takes
     // longer than 6 seconds
-    console.log(error.name === 'AbortError')
+    throw new Error('aborted because initial request took too long')
   }
 };
 
