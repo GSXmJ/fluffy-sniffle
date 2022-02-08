@@ -45,14 +45,14 @@ function formatting (data, range) {
     jpegs.push(data.result.data.items[i].image)
   }
   // console.log({ name, jpegs })
-  console.log(typeof name)
+  // console.log(typeof name)
   return { [name]: jpegs }
   // console.log(jpegs)
 }
 
 async function main () {
   const arg = process.argv.slice(2)
-  console.log(arg)
+  // console.log(arg)
   const args = []
 
   arg.forEach(element => {
@@ -71,7 +71,7 @@ async function main () {
   )
   const lowestCommonAmount = Math.min(...amounts)
   // const lowestCommonAmount = 4
-  console.log(lowestCommonAmount)
+  // console.log(lowestCommonAmount)
 
   const result = []
   data.forEach((datum) => {
@@ -83,3 +83,6 @@ async function main () {
 }
 
 main()
+
+// ### usage ###
+// node collectionMashup degenapes smb thugbirdz
